@@ -100,7 +100,11 @@ df
 
 # %%
 # Connect to Dropbox
-access_token = "W9SIGAIOPbcAAAAAAAAAAcbg_ogFc8xw3lBhJeybL7phj6AZdrV5_CyQCgnPFZlt"
+import yaml
+with open('cred.yaml', 'r') as file:
+    cred = yaml.safe_load(file)
+
+access_token = cred["db_key"]
 dbx = dropbox.Dropbox(access_token)
 assert dbx.users_get_current_account().name.abbreviated_name == "AB"
 
