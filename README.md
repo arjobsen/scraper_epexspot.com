@@ -10,8 +10,8 @@ Van https://www.epexspot.com/en/market-data
 1. Installeer de benodigde packages `pip install -r requirements.txt`
 
 Voor opslag op Dropbox is een API key nodig. Die gaat natuurlijk niet openbaar op het internet.
-1. Maak een tekstbestand genaamd cred.yaml aan in de folder energieprijzen en plaats daar de volgende lijn code in
-`db_key: "APIKEY"`
+1. Maak een tekstbestand genaamd cred.yaml aan in de folder energieprijzen en plaats daar de volgende lijn code in  
+`db_key: "APIKEY"`  
 Vervang `APIKEY` met de sleutel die je van Arjen hebt gekregen. Die "haakjes" moeten wel blijven staan.
 
 Gefeliciteerd de setup is compleet en nu kun je de scraper uitvoeren met `python scraper.py`
